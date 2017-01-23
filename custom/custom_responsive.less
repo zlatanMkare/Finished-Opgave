@@ -1,0 +1,135 @@
+@import "../bootstrap/less/bootstrap.less";
+@import "custom_variables.less";
+
+@smartphones-small: ~"only screen and (max-width: 319px)";
+@smartphones: ~"only screen and (max-width: 479px)";
+@tablets: ~"only screen and (max-width: 799px)";
+@laptop-sm: ~"only screen and (max-width: 991px)";
+@laptop-md: ~"only screen and (max-width: 1024px)";
+
+
+section{
+	@media @tablets{
+		margin: 0;
+	}
+}
+
+h2{
+	@media @smartphones-small, @smartphones{
+		font-size: 20px;
+	}
+}
+
+.container{
+	@media @laptop-sm{
+		width: 100%;
+	}
+}
+
+.navbar-nav{
+	@media (max-width: 799px){
+		.search{
+			display: none;
+		}
+	}
+}
+
+
+.showcase-one, .showcase-two{
+	@media @laptop-md{
+		.row{
+			.text{
+				width: 100%;
+				margin-left: 0;
+			}
+		}
+	}
+	
+	@media @laptop-sm{
+		.row{
+			img{
+				max-width: 100%;
+				padding-top: 55px;
+			}
+		}
+	}
+	
+	@media @smartphones{
+		.row{
+			.btn{
+				padding: 10px 18px;
+				margin-right: 1px;
+			}
+			
+			img{
+				max-width: 100%;
+				padding-top: 55px;
+			}
+		}
+	}
+	
+	@media @tablets{
+		.row{
+			img{
+				max-width: 100%;
+				padding-top: 55px;
+			}
+		}
+	}
+	
+}
+
+
+.testimonials{
+	@media @smartphones, @tablets, @laptop-sm{
+		padding-top: 50px;
+		
+		.testimony{
+			margin-bottom: 130px;
+		}
+	}
+}
+
+
+.counter{
+	@media @smartphones, @tablets, @laptop-sm{
+		.count{
+			padding-bottom: 30px;
+		}
+	}
+}
+
+
+footer{
+	@media @smartphones{
+		.footer-details{
+			display: block;
+		}
+		
+		.footer-social{
+			float: left;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
