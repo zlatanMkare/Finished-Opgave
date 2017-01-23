@@ -16,7 +16,7 @@ section{
 
 h2{
 	@media @smartphones-small, @smartphones{
-		font-size: 20px;
+		font-size: 23px;
 	}
 }
 
@@ -31,6 +31,17 @@ h2{
 		.search{
 			display: none;
 		}
+	}
+}
+
+.intro-text{
+	@media @tablets{
+		width: 100%
+	}
+	
+	@media (max-width: 540px){
+		width: 100%;
+		height: 60%;
 	}
 }
 
